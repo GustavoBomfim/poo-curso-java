@@ -12,7 +12,12 @@ public class DataTeste {
         d2.mes = 03;
         d2.ano = 2005;
 
-        System.out.printf("A data 1 é: %d/%d/%d \n", d1.dia, d1.mes, d1.ano);
-        System.out.printf("A data 2 é: %d/%d/%d", d2.dia, d2.mes, d2.ano);
+        String dataFormatada1 = d1.obterDataFormatada();
+
+        System.out.println("A data 1 é: " + dataFormatada1);
+        System.out.println("A data 2 é: " + d2.obterDataFormatada());
+
+        d1.imprimirDataFormatada();
+        d2.imprimirDataFormatada();
     }
 }
