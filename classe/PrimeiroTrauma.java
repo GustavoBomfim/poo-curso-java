@@ -9,7 +9,7 @@ public class PrimeiroTrauma {
 
         PrimeiroTrauma primeiroTrauma = new PrimeiroTrauma();
         System.out.println(primeiroTrauma.a);
-        
+
         System.out.println(b);
     }
 }
