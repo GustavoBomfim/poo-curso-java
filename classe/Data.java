@@ -10,6 +10,8 @@ public class Data {
         mes = 1;
         ano = 1970;
 
+        // this(1, 1, 1970)      <--- tbm poderia fazer dessa forma
+
     }
     Data(int dia, int mes, int ano){
         this.dia = dia;
@@ -17,7 +19,8 @@ public class Data {
         this.ano = ano;
     }
     String obterDataFormatada() {
-        return String.format("%d/%d/%d", dia, mes, ano);
+        final String formato = "%d/%d/%d";
+        return String.format(formato, dia, mes, ano);
     }
 
     void imprimirDataFormatada(){
