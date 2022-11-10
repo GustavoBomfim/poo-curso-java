@@ -2,23 +2,26 @@ package oo.composicao.polimorfismo;
 
 public class Jantar {
     public static void main(String[] args) {
+
         Pessoa convidado = new Pessoa(99.65);
 
-        Arroz ingrediente1 = new Arroz(0.200);
-        Feijao ingrediente2 = new Feijao(0.100);
+        Arroz ingrediente1 = new Arroz();
+        Feijao ingrediente2 = new Feijao();
 
-        System.out.println(convidado.getPeso());
+        Sorvete sobremesa = new Sorvete();
 
+        // PESO INICIAL
+        System.out.println("Peso Inicial do convidado: " + convidado.getPeso());
+
+        // PESO PÓS ALMOÇO
         convidado.comer(ingrediente1);
         convidado.comer(ingrediente2);
-        System.out.println(convidado.getPeso());
+        System.out.println("Peso do Convidado após o almoço: " + convidado.getPeso());
 
-        Sorvete sobremesa = new Sorvete(0.400);
 
+        // PESO PÓS SOBREMESA
         convidado.comer(sobremesa);
-        System.out.println(convidado.getPeso());
-
-
+        System.out.println("Peso do Convidado após a sobremes: " + convidado.getPeso());
 
     }
 }

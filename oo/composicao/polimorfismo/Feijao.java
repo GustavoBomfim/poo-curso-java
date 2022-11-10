@@ -1,18 +1,8 @@
 package oo.composicao.polimorfismo;
 
-public class Feijao {
-    private double peso;
+public class Feijao extends Alimento {
 
-    public Feijao(double peso){
-        setPeso(peso);
-    }
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        if(peso >= 0){
-            this.peso = peso;
-        }
+    public Feijao(){
+        super(0.300);
     }
 }
