@@ -5,7 +5,7 @@ public class Carro {
     public int velocidadeAtual;
     int delta = 5;
 
-    public Carro(int velocidadeMaxima){
+    protected Carro(int velocidadeMaxima){
         VELOCIDADE_MAXIMA = velocidadeMaxima;
     }
     public void acelerar(){
